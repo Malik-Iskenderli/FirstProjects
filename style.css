@@ -1,0 +1,619 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./picture/papaqlitelebeler.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+body .webGrid {
+  display: grid;
+}
+body .webGrid .navbar-header {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100px;
+  left: 100px;
+  background-color: inherit;
+  opacity: 0.8;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 0;
+}
+body .webGrid .navbar-header::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  opacity: 0.6;
+}
+body .webGrid .navbar-header .navbar-flex {
+  display: flex;
+  align-items: center;
+  margin-left: 8rem;
+  z-index: 1000;
+}
+body .webGrid .navbar-header .navbar-flex .bars-icon {
+  display: none;
+}
+body .webGrid .navbar-header .navbar-flex .bars-icon i {
+  font-size: 20rem;
+}
+body .webGrid .navbar-header .navbar-flex ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1.2rem;
+  margin-left: 10rem;
+}
+body .webGrid .navbar-header .navbar-flex ul li {
+  list-style-type: none;
+  margin-left: 2rem;
+}
+body .webGrid .navbar-header .navbar-flex ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+body .webGrid .navbar-header .navbar-flex ul li a:hover {
+  color: #EB1C23;
+}
+body .webGrid .carusell {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+body .webGrid .carusell .text-picture {
+  position: absolute;
+  top: 30%;
+  left: 130px;
+}
+body .webGrid .carusell .text-picture h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+body .webGrid .carusell .text-picture p {
+  color: white;
+  margin-top: 1rem;
+}
+body .webGrid .carusell .text-picture button {
+  border: none;
+  background-color: #EB1C23;
+  color: white;
+  width: 10rem;
+  height: 30px;
+  margin-top: 0.7rem;
+  font-weight: bold;
+}
+body .webGrid .carusell .text-picture button:hover {
+  background-color: white;
+  color: #EB1C23;
+}
+body .webGrid .two-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  height: 100%;
+}
+/* body .webGrid .two-box .one-cards {
+  height: 30rem;
+  box-shadow: 4px 4px 4px 4px #7f7f7f;
+  margin-top: 10rem;
+  margin-left: 7rem;
+  margin-bottom: 10rem;
+  overflow-y: scroll;
+  padding: 4rem;
+} */
+
+.one-cards {
+  height: 30rem;
+  box-shadow: 4px 4px 4px 4px #7f7f7f;
+  margin-top: 10rem;
+  margin-left: 7rem;
+  margin-bottom: 10rem;
+  overflow-y: scroll;
+  padding: 4rem;
+}
+.one-cards::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.one-cards::-webkit-scrollbar-thumb {
+  border-radius: 50px ;
+  background-color: red;
+}
+
+
+body .webGrid .two-box .one-cards h2 {
+  color: #2B2A5D;
+}
+body .webGrid .two-box .one-cards .box-card-text span {
+  color: #EB1C23;
+  font-weight: bold;
+  font-size: 16px;
+}
+body .webGrid .two-box .one-cards .box-card-text P {
+  color: #606060;
+  border-bottom: 1px solid #606060;
+  padding-bottom: 1rem;
+}
+body .webGrid .two-box .two-cards {
+  height: 30rem;
+  box-shadow: 4px 4px 4px 4px #7f7f7f;
+  margin-top: 10rem;
+  margin-right: 7rem;
+  margin-bottom: 10rem;
+  padding: 3rem;
+}
+body .webGrid .two-box .two-cards .box-card-text-two h4 {
+  color: #2B2A5D;
+  font-weight: bold;
+}
+body .webGrid .two-box .two-cards .box-card-text-two p {
+  color: #606060;
+  border-bottom: 1px solid #606060;
+  padding-bottom: 1rem;
+}
+/* body .webGrid .blue-zone {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #2B2A5D;
+  height: 70vh;
+  z-index: 2;
+} */
+
+body .webGrid .blue-zone {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 70vh;
+  /* z-index: 2; */
+
+  background:  url('./picture/papaqlitelebeler.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  position: relative;
+}
+
+body .webGrid .blue-zone::before{
+  background-color: rgba(18, 33, 122, 0.644);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+body .webGrid .blue-zone .blue-zone-text {
+  width:100vh;
+  margin: 8rem 8rem;
+  position: relative;
+  z-index: 5;
+}
+
+/* body .webGrid .blue-zone .blue-zone-text {
+  width: 100vh;
+  margin: 8rem 8rem;
+} */
+body .webGrid .blue-zone .blue-zone-text h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .webGrid .blue-zone .blue-zone-text p {
+  color: white;
+  font-weight: bold;
+}
+body .webGrid .blue-zone .blue-zone-text button {
+  border: none;
+  background-color: #EB1C23;
+  color: white;
+  width: 10rem;
+  height: 30px;
+  margin-top: 0.7rem;
+  font-weight: bold;
+}
+body .webGrid .blue-zone .blue-zone-text button:hover {
+  background-color: white;
+  color: #EB1C23;
+}
+body .webGrid .logo-center {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+body .webGrid .logo-center .logoText-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+body .webGrid .logo-center .logoText-center img {
+  padding-left: 10rem;
+}
+body .webGrid .logo-center .logoText-center h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #2B2A5D;
+  padding-top: 10px;
+}
+body .webGrid .three-box-picture, body .webGrid .three-box-picture-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
+}
+body .webGrid .three-box-picture .box-one-picture, body .webGrid .three-box-picture-bottom .box-one-picture, body .webGrid .three-box-picture-bottom .box-one-picture-bottom, body .webGrid .three-box-picture-bottom .box-two-picture-bottom, body .webGrid .three-box-picture-bottom .box-three-picture-bottom, body .webGrid .three-box-picture .box-three-picture, body .webGrid .three-box-picture-bottom .box-three-picture, body .webGrid .three-box-picture .box-two-picture, body .webGrid .three-box-picture-bottom .box-two-picture {
+  box-shadow: -1px 4px 4px 2px #606060;
+  width: 400px;
+}
+body .webGrid .three-box-picture .box-one-picture img, body .webGrid .three-box-picture-bottom .box-one-picture img, body .webGrid .three-box-picture-bottom .box-one-picture-bottom img, body .webGrid .three-box-picture-bottom .box-two-picture-bottom img, body .webGrid .three-box-picture-bottom .box-three-picture-bottom img, body .webGrid .three-box-picture .box-three-picture img, body .webGrid .three-box-picture-bottom .box-three-picture img, body .webGrid .three-box-picture .box-two-picture img, body .webGrid .three-box-picture-bottom .box-two-picture img {
+  width: 400px;
+  transition: 1s ease-in-out;
+}
+body .webGrid .three-box-picture .box-one-picture img:hover, body .webGrid .three-box-picture-bottom .box-one-picture img:hover, body .webGrid .three-box-picture-bottom .box-one-picture-bottom img:hover, body .webGrid .three-box-picture-bottom .box-two-picture-bottom img:hover, body .webGrid .three-box-picture-bottom .box-three-picture-bottom img:hover, body .webGrid .three-box-picture .box-three-picture img:hover, body .webGrid .three-box-picture-bottom .box-three-picture img:hover, body .webGrid .three-box-picture .box-two-picture img:hover, body .webGrid .three-box-picture-bottom .box-two-picture img:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 3px #606060;
+}
+body .webGrid .three-box-picture .box-one-picture h1, body .webGrid .three-box-picture-bottom .box-one-picture h1, body .webGrid .three-box-picture-bottom .box-one-picture-bottom h1, body .webGrid .three-box-picture-bottom .box-two-picture-bottom h1, body .webGrid .three-box-picture-bottom .box-three-picture-bottom h1, body .webGrid .three-box-picture .box-three-picture h1, body .webGrid .three-box-picture-bottom .box-three-picture h1, body .webGrid .three-box-picture .box-two-picture h1, body .webGrid .three-box-picture-bottom .box-two-picture h1 {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 0px 5px 20px;
+}
+body .webGrid .three-box-picture .box-one-picture p, body .webGrid .three-box-picture-bottom .box-one-picture p, body .webGrid .three-box-picture-bottom .box-one-picture-bottom p, body .webGrid .three-box-picture-bottom .box-two-picture-bottom p, body .webGrid .three-box-picture-bottom .box-three-picture-bottom p, body .webGrid .three-box-picture .box-three-picture p, body .webGrid .three-box-picture-bottom .box-three-picture p, body .webGrid .three-box-picture .box-two-picture p, body .webGrid .three-box-picture-bottom .box-two-picture p {
+  color: #606060;
+  padding: 15px 65px 5px 20px;
+  transition: 0.5s ease-in-out;
+}
+body .webGrid .three-box-picture .box-one-picture p:hover, body .webGrid .three-box-picture-bottom .box-one-picture p:hover, body .webGrid .three-box-picture-bottom .box-one-picture-bottom p:hover, body .webGrid .three-box-picture-bottom .box-two-picture-bottom p:hover, body .webGrid .three-box-picture-bottom .box-three-picture-bottom p:hover, body .webGrid .three-box-picture .box-three-picture p:hover, body .webGrid .three-box-picture-bottom .box-three-picture p:hover, body .webGrid .three-box-picture .box-two-picture p:hover, body .webGrid .three-box-picture-bottom .box-two-picture p:hover {
+  color: red;
+  cursor: pointer;
+}
+body .webGrid .three-box-picture .box-one-picture button, body .webGrid .three-box-picture-bottom .box-one-picture button, body .webGrid .three-box-picture-bottom .box-one-picture-bottom button, body .webGrid .three-box-picture-bottom .box-two-picture-bottom button, body .webGrid .three-box-picture-bottom .box-three-picture-bottom button, body .webGrid .three-box-picture .box-three-picture button, body .webGrid .three-box-picture-bottom .box-three-picture button, body .webGrid .three-box-picture .box-two-picture button, body .webGrid .three-box-picture-bottom .box-two-picture button {
+  border: none;
+  background-color: #EB1C23;
+  color: white;
+  width: 8rem;
+  height: 40px;
+  font-weight: bold;
+  margin: 5px 0px 20px 20px;
+  transition: 0.4s ease-in-out;
+}
+body .webGrid .three-box-picture .box-one-picture button:hover, body .webGrid .three-box-picture-bottom .box-one-picture button:hover, body .webGrid .three-box-picture-bottom .box-one-picture-bottom button:hover, body .webGrid .three-box-picture-bottom .box-two-picture-bottom button:hover, body .webGrid .three-box-picture-bottom .box-three-picture-bottom button:hover, body .webGrid .three-box-picture .box-three-picture button:hover, body .webGrid .three-box-picture-bottom .box-three-picture button:hover, body .webGrid .three-box-picture .box-two-picture button:hover, body .webGrid .three-box-picture-bottom .box-two-picture button:hover {
+  background-color: #2B2A5D;
+}
+body .webGrid .eight-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem 6rem;
+  gap: 20px;
+}
+body .webGrid .eight-box .first-box-eight {
+  display: flex;
+  box-shadow: 2px 1px 2px 2px #606060;
+}
+body .webGrid .eight-box .first-box-eight:hover .history-box {
+  background-color: #EB1C23;
+}
+body .webGrid .eight-box .first-box-eight .history-box {
+  background-color: #2B2A5D;
+  color: white;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+body .webGrid .eight-box .first-box-eight .history-box span {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+body .webGrid .eight-box .first-box-eight .text-first-box h4 {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+  padding: 20px 5px 0px 15px;
+  letter-spacing: 1px;
+  transition: 0.5s ease-in-out;
+}
+body .webGrid .eight-box .first-box-eight .text-first-box h4:hover {
+  color: #EB1C23;
+  cursor: pointer;
+}
+body .webGrid .eight-box .first-box-eight .text-first-box p {
+  color: #606060;
+  padding: 0px 5px 0px 15px;
+}
+body .webGrid .eight-box .first-box-eight .text-first-box p span {
+  margin-left: 30px;
+}
+body .webGrid .eight-box .first-box-eight button {
+  width: 90px;
+  height: 30px;
+  margin: 30px 0px 0px 100px;
+  background-color: inherit;
+  border: 0.2px solid #606060;
+  box-shadow: 2px 1px 2px 2px #606060;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 13px;
+  transition: 0.5s ease-in-out;
+}
+body .webGrid .eight-box .first-box-eight button:hover {
+  background-color: #EB1C23;
+  color: white;
+}
+body .webGrid .radius-boy {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 10rem;
+  background-color: #2B2A5D;
+  height: 450px;
+}
+body .webGrid .radius-boy .round-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .webGrid .radius-boy .round-box .img-round {
+  padding-top: 80px;
+}
+body .webGrid .radius-boy .round-box .img-round img {
+  border-radius: 50%;
+}
+body .webGrid .radius-boy .round-box .round-text {
+  color: white;
+  width: 50%;
+  padding: 10px 25px;
+  font-weight: lighter;
+  margin-top: 2rem;
+}
+body .webGrid .radius-boy .round-box .round-text-name p {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-left: 35px;
+  transition: 0.5s ease-in-out;
+  padding-left: 10px;
+}
+body .webGrid .radius-boy .round-box .round-text-name p:hover {
+  background-color: #EB1C23;
+  color: #2B2A5D;
+  cursor: pointer;
+}
+body .webGrid .radius-boy .round-box .round-text-name span {
+  color: #EB1C23;
+  font-size: 25px;
+  letter-spacing: 1.8px;
+  margin-left: 15px;
+}
+body .webGrid .three-box-picture-bottom {
+  padding-left: 100px;
+}
+body .webGrid .three-box-picture-bottom .box-one-picture-bottom, body .webGrid .three-box-picture-bottom .box-two-picture-bottom, body .webGrid .three-box-picture-bottom .box-three-picture-bottom {
+  box-shadow: -1px 4px 4px 2px #606060;
+  width: 350px;
+}
+body .webGrid .three-box-picture-bottom .box-one-picture-bottom img, body .webGrid .three-box-picture-bottom .box-two-picture-bottom img, body .webGrid .three-box-picture-bottom .box-three-picture-bottom img {
+  width: 350px;
+}
+body .webGrid .three-box-picture-bottom .box-one-picture-bottom h1, body .webGrid .three-box-picture-bottom .box-two-picture-bottom h1, body .webGrid .three-box-picture-bottom .box-three-picture-bottom h1 {
+  border-bottom: 1px solid #606060;
+  width: 348px;
+  font-weight: normal;
+  font-size: 16px;
+}
+body .webGrid .three-box-picture-bottom .box-one-picture-bottom p, body .webGrid .three-box-picture-bottom .box-two-picture-bottom p, body .webGrid .three-box-picture-bottom .box-three-picture-bottom p {
+  color: black;
+  font-weight: bold;
+}
+body .webGrid .three-box-picture-bottom .box-one-picture-bottom button, body .webGrid .three-box-picture-bottom .box-two-picture-bottom button, body .webGrid .three-box-picture-bottom .box-three-picture-bottom button {
+  background-color: white;
+  color: red;
+}
+body .webGrid .three-box-picture-bottom .box-one-picture-bottom button:hover, body .webGrid .three-box-picture-bottom .box-two-picture-bottom button:hover, body .webGrid .three-box-picture-bottom .box-three-picture-bottom button:hover {
+  background-color: white;
+  color: #606060;
+}
+body .webGrid .email-bottom {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #FAFAFA;
+  height: 300px;
+  margin-top: 100px;
+}
+body .webGrid .email-bottom .email-container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .webGrid .email-bottom .email-container-box .email-parents-box h1 {
+  color: #2B2A5D;
+}
+body .webGrid .email-bottom .email-container-box .email-parents-box p {
+  color: #606060;
+  margin: 0.7rem 6rem;
+}
+body .webGrid .email-bottom .email-container-box .email-search-button {
+  margin-top: 20px;
+}
+body .webGrid .email-bottom .email-container-box .email-search-button input {
+  width: 550px;
+  height: 43.5px;
+}
+body .webGrid .email-bottom .email-container-box .email-search-button button {
+  background-color: #EB1C23;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+body .webGrid .email-bottom .email-container-box .email-search-button button:hover {
+  background-color: #2B2A5D;
+}
+body .webGrid .footer-after {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 100px;
+  padding: 20px 100px;
+}
+body .webGrid .footer-after .footer-after-logo p {
+  color: #606060;
+  margin-top: 25px;
+}
+body .webGrid .footer-after .information-box {
+  margin-left: 50px;
+}
+body .webGrid .footer-after .information-box h2 {
+  font-size: 16px;
+  color: #606060;
+  font-weight: bold;
+  margin-left: 30px;
+  border-bottom: 1px solid #606060;
+  width: 20%;
+  padding-bottom: 10px;
+}
+body .webGrid .footer-after .information-box p {
+  border-bottom: 1px solid #606060;
+  width: 30%;
+  margin-left: 30px;
+}
+body .webGrid .footer-after .information-box ul {
+  margin-top: 25px;
+}
+body .webGrid .footer-after .information-box ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+body .webGrid .footer-after .information-box ul li a {
+  text-decoration: none;
+  color: #606060;
+}
+body .webGrid .footer-after .information-box ul li a:hover {
+  color: red;
+}
+body .webGrid .footer-after .USEFULLINKS-box h2 {
+  font-size: 16px;
+  color: #606060;
+  font-weight: bold;
+  margin-left: 30px;
+}
+body .webGrid .footer-after .USEFULLINKS-box p {
+  border-bottom: 1px solid #606060;
+  width: 20%;
+  margin-left: 30px;
+}
+body .webGrid .footer-after .USEFULLINKS-box ul {
+  margin-top: 35px;
+}
+body .webGrid .footer-after .USEFULLINKS-box ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+body .webGrid .footer-after .USEFULLINKS-box ul li a {
+  text-decoration: none;
+  color: #606060;
+}
+body .webGrid .footer-after .USEFULLINKS-box ul li a:hover {
+  color: red;
+}
+body .webGrid .footer-after .GETINTOUCH-box h2 {
+  font-size: 16px;
+  color: #606060;
+  font-weight: bold;
+  margin-left: 30px;
+}
+body .webGrid .footer-after .GETINTOUCH-box p {
+  border-bottom: 1px solid #606060;
+  width: 20%;
+  margin-left: 30px;
+}
+body .webGrid .footer-after .GETINTOUCH-box ul {
+  margin-top: 35px;
+}
+body .webGrid .footer-after .GETINTOUCH-box ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+body .webGrid .footer-after .GETINTOUCH-box ul li a {
+  text-decoration: none;
+  color: #606060;
+}
+body .webGrid .footer-after .GETINTOUCH-box ul li a:hover {
+  color: red;
+}
+body .webGrid footer {
+  background-color: #2B2A5D;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+body .webGrid footer .footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+body .webGrid footer .footer-text p {
+  color: #a39f9f;
+}
+body .webGrid footer .footer-text p span {
+  color: white;
+}
+.box-icon-social i{
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px 15px;
+  color: red;
+}
+
+.social-footer-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.social-footer-list li{
+  margin-right: 13px;
+}
+.social-footer-list li a{
+  border: 1px solid #DADADA;
+  color: #7D7D7D;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.social-footer-list li a:hover{
+  background-color: #EB1C23;
+  color: white;
+}
+.social-footer-list li a i{
+  font-size: 12px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
